@@ -27,7 +27,7 @@ export default [
     },
     rules:{
       "react/no-unescaped-entities": "off",
-      "react/propt-types": "off",
+      "react/prop-types": "off",
     }
   },
   prettier,
