@@ -16,11 +16,12 @@ export default defineConfig({
     },
   },
   plugins: [TanStackRouterVite(), react()],
-  test: {
-    environment: "happy-dom",
-    coverage: {
-      reporter: ["text", "json", "html"],
-    }
-  },
+  //this will be now taken care of in vitest.workspace.js
+  // test: {
+  //   environment: "happy-dom",
+  //   coverage: {
+  //     reporter: ["text", "json", "html"],
+  //   }
+  // },
   
 });
