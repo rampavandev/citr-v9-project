@@ -15,7 +15,21 @@ export default defineConfig({
       },
     },
   },
-  plugins: [TanStackRouterVite(), react()],
+  plugins: [
+    TanStackRouterVite(),
+    react({
+      babel: {
+        plugins: [
+          [
+            "babel-plugin-react-compiler",
+            {
+              target: "19",
+            },
+          ],
+        ],
+      },
+    }),
+  ],
   //this will be now taken care of in vitest.workspace.js
   // test: {
   //   environment: "happy-dom",
@@ -23,5 +37,4 @@ export default defineConfig({
   //     reporter: ["text", "json", "html"],
   //   }
   // },
-  
 });
