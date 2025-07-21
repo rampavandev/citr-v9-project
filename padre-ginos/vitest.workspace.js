@@ -8,7 +8,7 @@ export default defineWorkspace([
       name: "happy-dom",
       environment: "happy-dom",
       coverage:{
-         provider: "istanbul",
+        provider: "istanbul",
         reporter: ["text", "json", "html"],
       } 
     },
